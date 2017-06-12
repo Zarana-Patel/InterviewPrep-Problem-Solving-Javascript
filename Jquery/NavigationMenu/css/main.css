@@ -1,0 +1,170 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html, body, #fullheight {
+    min-height: 100% !important;
+    height: 100%;
+}
+body{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-size:14;
+
+}
+.container{
+  width: 100%;
+  height: 100%;
+
+}
+
+.image{
+  float: left;
+  margin: 5px;
+}
+.title{
+  display: inline-block;
+    vertical-align: top;
+    padding-top: 15px;
+  width: 10%;
+  color:#FFFFFF;
+
+}
+.nav-header{
+  background:#427DC2 ;
+  color:#FFFFFF;
+  height: 50px;
+
+}
+.menubuttons{
+  padding-left: 10px;
+  display: inline-block;
+    vertical-align: top;
+    padding-top: 15px;
+}
+#menu-button1{
+  padding-left: 100px;
+}
+
+#menu-button2{
+  display: none;
+  padding-left: 100px;
+}
+#maincontent {
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 95%;
+  z-index: 1;
+
+
+
+}
+
+div.transbox {
+      z-index:100;
+      position:absolute;
+      color:white;
+      font-size:24px;
+      font-weight:bold;
+      left:350px;
+      top:350px;
+      margin: 0 auto;
+
+   }
+
+div.transbox p  {
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    color: #616161;
+    text-shadow: 24px 8px 30px #F1F1F1;
+
+}
+h2{
+
+    font-size: 60px;
+    color:#00648C;
+    text-shadow: 24px 8px 30px #F1F1F1;
+}
+#menubar {
+  width: 0;
+  position: fixed;
+  height: 100%;
+  margin:0px;
+  padding:0px;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+  z-index:10;
+  background: rgba(0.3,0.3,0.3,0.3);
+  box-shadow: 1px 5px 13px #F1F1F1;
+}
+
+@media only screen and (max-width:680px) {
+  div #menubar.open{
+    width: 100%;
+  }
+
+}
+@media only screen and (max-width: 768px) {
+         div #menubar.open{
+           width: 50%;
+         }
+}
+#menubar.open {
+  width: 15%;
+  background-color: #FBFCFC ;
+}
+.nav {
+   list-style: none;
+}
+li{
+  padding: 10px;
+  text-align: center;
+}
+.first{
+  border-bottom: 1px solid #CED0D3;
+  font-size: 14px;
+  font-weight: bold;
+  color: #757575;
+
+}
+.first:hover{
+  background: #FFFFFF;
+  color: #757575;
+}
+li:hover{
+    background: #FAFAFA;
+    color: #000000;
+}
+em{
+  width: 2em;
+}
+a{
+  margin: 5px;
+  padding: 5px;
+  color:#757575;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:active,a:hover {
+  background: #FAFAFA;
+    color: #000000;
+}
+.submenu{
+  display: none;
+  list-style: none;
+}
+
+.content-wrapper {
+  width: 85%;
+  
+  float:right;
+  box-sizing: border-box;
+  z-index:1;
+
+}

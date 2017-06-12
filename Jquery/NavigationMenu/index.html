@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>welcome to mypage</title>
+    <script src="https://use.fontawesome.com/6ed58abf1d.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+    <link rel='stylesheet' href="css/main.css" />
+  </head>
+  <body>
+      <div class="container">
+        <div class="nav-header">
+          <img class="image" src="images/logo.png" alt="app logo" />
+          <div class="title">Imagination  </div>
+          <div class="menubuttons">
+            <span id="menu-button1"><em class="fa fa-bars fa-lg"></em></span>
+              <span id="menu-button2"><em class="fa fa-times "></em></span>
+            </div>
+        </div>
+        <div id ="maincontent">
+          <div id="menubar">
+            <ul class="nav">
+              <li class="first">Main navigation</li>
+              <li>
+                <a class="menulink" href="html/calendar.html">
+                  <em class="fa fa-dot-circle-o"></em>
+                  <span class="item-text">Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a class="menulink" href="html/calendar.html">
+                  <em class="fa fa-flask"></em>
+                  <span class="item-text">SubMenu</span>
+                </a>
+                <ul class="submenu">
+                  <li><a class="menulink" href="html/calendar.html">Timeline</a></li>
+                  <li>
+                    <a class="menulink" href="html/calendar.html">
+                      <em class="fa fa-calendar" aria-hidden="true"></em>
+                        <span class="item-text">Calendar</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li><a class="menulink" href="#">Link</a></li>
+              <li><a class="menulink" href="#">Link</a></li>
+              <li><a class="menulink" href="#">Link</a></li>
+            </ul>
+          </div>
+          <div class="content-wrapper">
+            <div class="transbox">
+              <h2>Imagination</h2><p> The most powerful force</p>
+            </div>
+          </div>
+        </div>
+      </div>
+          <script type="application/javascript" src="js/libs/fullcalendar/lib/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+  </body>
+</html>

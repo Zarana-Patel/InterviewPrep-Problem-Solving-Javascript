@@ -1,0 +1,65 @@
+
+.content-header{
+  width:100%;
+  border-bottom: 1px solid #CED0D3;
+  background: #FAFBFC;
+  padding :10px;
+  margin-bottom:5px;
+
+}
+
+
+#calendar{
+
+
+}
+.panel-default {
+    border-color: #cfdbe2;
+}
+.panel {
+  width: 50%;
+    margin: 15px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    border-top: 3px solid #cfdbe2;
+    border-color: #cfdbe2;
+
+}
+.fc-row{
+  color: #000000;
+  font-size: 14px;
+}
+.fc-day-header,.fc-axis {
+  font-size: 10px;
+  margin: 2px;
+}
+.fc-button-group>:first-child {
+    margin-left: 8px;
+}
+.container{
+  width:100%;
+    background: #e8eef2;
+}
+.fc-left, .fc-right {
+    font-size: 10px;
+  }
+h2{
+  font-size: 12px;
+  padding:5px;
+}
+.fc-center h2{
+  font-size: 9px;
+  padding:4px;
+}
+.row{
+  margin: 5px;
+  padding: 5px;
+  width:50%;
+}
+
+.fc-event :hover{
+  color: #000000;
+}

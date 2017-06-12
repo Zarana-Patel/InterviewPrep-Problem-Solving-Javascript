@@ -1,0 +1,73 @@
+.carousel_first{
+	width: 50%;
+}
+.main-carousel{
+	
+	height:400px;
+	overflow:hidden;
+	position:relative;
+	z-index:1;
+	border: 1px solid black;
+	margin-left: 10px;
+}
+.main-carousel .carousel-next,
+.main-carousel .carousel-prev{
+	position:absolute;
+	top:50%;
+	padding:20px;
+	cursor:pointer;
+}
+.main-carousel .carousel-next{
+	right:0;
+	z-index:1;
+}
+ .main-carousel .carousel-prev{
+	left:0;
+	z-index:1;
+}
+ .main-carousel .carousel-cells{
+	width:99999px;
+	position:absolute;
+}
+ .main-carousel .carousel-cells article{
+	width:100vw;
+	height:100%;
+	float:left;
+	display:flex;
+	background-image: url("../img/slide-background.jpg");
+}
+.logo{
+	  font-size: 24px;
+    padding: 10px;
+}
+nav ul {
+	float:right;
+	padding: 10px;
+}
+nav li{
+	display:inline;
+	float:left;
+	background-color: #e2e2e2;
+	margin: 3px;
+	padding: 5px;
+	width:50px;
+	text-align: center;
+
+}
+.slide-text{
+	text-align: center;
+	padding:12%;
+}
+
+.slide-text h1{
+	font-size:36px;
+}
+
+.column-content{
+	padding:15px;
+}
+
+.column-content h1{
+	font-size:18px;
+	padding: 10px 0px;
+}

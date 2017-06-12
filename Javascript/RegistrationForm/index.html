@@ -1,0 +1,75 @@
+<!DOCTYPE>
+<html>
+  <head><title>Registration</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src = "country.js"></script>
+      <meta content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="container">
+      <h3>Registration Form:</h3>
+      <form>
+        <div class="row">
+            <div class="col-xs-6">
+              <div class="form-group">
+                <label for="firstname" >First Name</label>
+                <input class="form-control" placeholder="Enter the firstname..." type="text">
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input class="form-control" placeholder="Enter the lastname..." type="text" >
+              </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6">
+            <div class="form-group">
+              <label for="address">Street Address</label>
+              <input class="form-control"  placeholder="Enter the street address..." type="text" >
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6">
+            <div class="form-group">
+              <input class="form-control"  type="text" >
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6">
+            <div class="form-group">
+              <label for="city">City</label>
+              <input class="form-control"  placeholder="Enter the City..."type="text" >
+            </div>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-xs-4">
+            <div class="form-group">
+              <div class="dropdown">
+                <label for="Country">Country</label>
+                <select class="form-control" id="country" onchange="generateStateDropDown()"></select>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-4">
+              <label for="State">State</label>
+                <select class="form-control"  id="state"></select>
+          </div>
+          <div class="col-xs-4">
+            <label for="postalcode">PostCode</label>
+            <input class="form-control"  placeholder="Enter the Postal Code..."type="text" >
+          </div>
+        </div>
+      </form>
+    </div>
+    <script>
+      generateCountryDropDown();
+    </script>
+  </body>
+</html>
