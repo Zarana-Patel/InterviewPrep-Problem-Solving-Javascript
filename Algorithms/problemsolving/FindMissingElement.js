@@ -1,5 +1,8 @@
 /**
  * Created by zaranapatel on 6/12/17.
+ * Missing elements within range 1 to 9
+ * Input array list : [1,3,2,7,5,9]
+ * Output : 4,6,8
  */
 var arr = [1,3,2,7,5,9];
 function missing(arr){

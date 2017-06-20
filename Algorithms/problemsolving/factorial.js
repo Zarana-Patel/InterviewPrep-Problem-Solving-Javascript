@@ -1,4 +1,7 @@
-// Factorial NUmber
+/* Factorial NUmber
+   input : 5
+   output : 5 * 4 * 3 * 2 * 1 = 120
+ */
 function fact(num){
     if(num === 1){
         return 1;

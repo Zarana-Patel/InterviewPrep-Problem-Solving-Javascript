@@ -1,5 +1,32 @@
 
-//Permutation of the string
+/*
+   Permutation of the string
+   Input : abcd
+   Output:   abcd
+             abdc
+             acbd
+             acdb
+             adbc
+             adcb
+             bacd
+             badc
+             bcad
+             bcda
+             bdac
+             bdca
+             cabd
+             cadb
+             cbad
+             cbda
+             cdab
+             cdba
+             dabc
+             dacb
+             dbac
+             dbca
+             dcab
+             dcba
+ */
 
 function getPermutations(str) {
     var len = str.length;
@@ -25,7 +52,11 @@ function getPermutations(str) {
 console.log(getPermutations('abcd').join('\n')) ;
 
 /*
-* function getAllPermutations(string) {
+   Solution 2: In array format
+   Output : ["abcd", "abdc", "acbd", "acdb", "adbc", "adcb", "bacd", "badc", "bcad", "bcda", "bdac", "bdca", "cabd",
+             "cadb", "cbad", "cbda", "cdab", "cdba", "dabc", "dacb", "dbac", "dbca", "dcab", "dcba"]
+
+ function getAllPermutations(string) {
  var results = [];
 
  if (string.length === 1) {

@@ -1,6 +1,10 @@
 /**
  * Created by zaranapatel on 6/12/17.
  */
+
+/*
+   Input : abc
+ * Output :"a","ab", "abc","b", "bc", "c" */
 function getSubString(str)
 {
     var length = str.length;

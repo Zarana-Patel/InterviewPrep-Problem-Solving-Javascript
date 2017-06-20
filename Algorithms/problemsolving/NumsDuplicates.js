@@ -1,7 +1,9 @@
 /**
  * Created by zaranapatel on 6/12/17.
  */
-//solution 1
+/*solution 1
+
+ */
 function Duplicates(nums){
     var unique = [];
     var dups =[];
@@ -22,7 +24,13 @@ function Duplicates(nums){
 }
 
 Duplicates([1,2,3,4,5,4]);
+
+
 /* solution 2
+1) sort the array
+2) if array [i] ==== array[i+1] then its duplicate number
+   else its unique number
+
 
  var arr = [9, 9, 9,9,111, 2, 3, 4, 4, 5, 7];
  var sorted_arr = arr.slice().sort();
@@ -40,17 +48,3 @@ Duplicates([1,2,3,4,5,4]);
  console.log(unique);
  */
 
-/*solution 3
- var arr = [1,6,9,2,4,5,8,2,3,5,6];
-
- function removeduplicates(arr){
- var tmp = [];
- for(var i = 0; i < arr.length; i++){
- if(tmp.indexOf(arr[i]) == -1){
- tmp.push(arr[i]);
- }
- }
- return tmp;
- }
-
- console.log(removeduplicates(arr)); */

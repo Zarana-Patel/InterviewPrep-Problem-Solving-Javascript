@@ -1,5 +1,8 @@
 /**
  * Created by zaranapatel on 6/12/17.
+ *
+ * Input : These are palindrome strings : aba,aba
+           These are palindrome strings : aab,baa,baa,aab
  */
 function getAllPermutations(string) {
     var results = [];
