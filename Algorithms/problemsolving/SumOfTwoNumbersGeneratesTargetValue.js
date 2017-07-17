@@ -70,4 +70,20 @@ console.log(twoSum([1,4,2,3,6,-1,88,53],5));
     }
  console.log(twoSum([3, 5, 2, -4, 8, 11], 7));
 
+
+ var twoSum = function(nums, target) {
+ var hash = {};
+
+ for(var i = 0; i < nums.length; i++) {
+ var num = nums[i];
+ if(hash[num] !== undefined) {
+ return [hash[num], i]
+ } else {
+ hash[target - num] = i;
+ }
+ }
+
+ return [];
+ };
  */
+

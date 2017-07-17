@@ -9,3 +9,28 @@ function reverse(s) {
 }
 
 console.log(reverse('zarana'));
+
+
+//solution2
+/*
+ function reverse1(str){
+ var arr,head,tail,temp;
+
+ if(!str) return;
+
+ head = 0;
+ tail = str.length-1;
+
+ while(head < tail){
+ temp = arr[head];
+ arr[head] = arr[tail];
+ arr[tail] = temp;
+
+ head++;
+ tail--;
+ }
+
+ return arr.join('');
+ }
+
+ */

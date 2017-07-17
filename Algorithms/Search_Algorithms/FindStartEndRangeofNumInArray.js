@@ -1,5 +1,10 @@
 /**
  * Created by zaranapatel on 6/12/17.
+ *
+ * Input :target 2
+ * Output : start index of 2 is 2
+ *       last index of 2 is 4
+ *       so [2,4]
  */
 binarySearch = function(a,t,b){
     var min=0,max =a.length-1,mid,result= -1;

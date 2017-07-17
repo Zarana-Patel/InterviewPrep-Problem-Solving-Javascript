@@ -1,5 +1,9 @@
 /**
  * Created by zaranapatel on 6/12/17.
+ *
+ * input : target 2
+ * Output : 2 occurs 3 times in arraylist
+
  */
 var binarySearch = function(a,t,b){
     var min=0,max =a.length-1,mid,result= -1;
@@ -37,5 +41,4 @@ else{
     result = lastIndex-firstIndex +1;
     console.log(target + " occurs "+ result +" times in arraylist");
 }
-
 

@@ -48,3 +48,28 @@ Duplicates([1,2,3,4,5,4]);
  console.log(unique);
  */
 
+/*
+ function findDups(list) {
+ var uniques = {}, val;
+ var dups = {};
+ for (var i =0;i<list.length; i++) {
+ val = list[i];
+ if (val in uniques) {
+
+ uniques[val]++;
+ dups[val] = uniques[val];
+ } else {
+ uniques[val] = 1;
+ }
+ }
+ console.log(uniques);
+ console.log(dups);
+ }
+
+ var data = [1,2,3,4,5,2,3,2,6,8,9,9];
+ findDups(data);   // returns  {2: 3, 3: 2, 9: 2}
+
+
+
+
+ */

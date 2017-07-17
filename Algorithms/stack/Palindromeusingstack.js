@@ -2,7 +2,7 @@
  * Created by zaranapatel on 6/12/17.
  */
 function isPalindrome(word) {
-    var s = new Array();
+    var s = [];
     for (var i = 0; i < word.length; ++i) {
         s.push(word[i]);
     }
