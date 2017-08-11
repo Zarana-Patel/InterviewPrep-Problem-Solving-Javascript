@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Shopping Cart</title>
+        <link rel="stylesheet" href="css/shopping.css">
+    </head>
+    <body>
+    <h1>Shopping Cart</h1>
+    <div class="shopping-cart">
+
+        <div class="column-labels">
+            <label class="product-image">Image</label>
+            <label class="product-details">Product</label>
+            <label class="product-price">Price</label>
+            <label class="product-quantity">Quantity</label>
+            <label class="product-removal">Remove</label>
+            <label class="product-line-price-label">Total</label>
+        </div>
+
+        <div class="final_cart">
+
+        </div>
+
+        <div class="totals">
+            <div class="totals-item total-price">
+                <label>Subtotal</label>
+                <div class="totals-value" id="cartsubtotal">00.00</div>
+            </div>
+            <div class="totals-item total-tax">
+                <label>Tax (5%)</label>
+                <div class="totals-value" id="cart-tax">00.00</div>
+            </div>
+            <div class="totals-item total-ship">
+                <label>Shipping</label>
+                <div class="totals-value" id="cart-shipping">15.00</div>
+            </div>
+            <div class="totals-item totals-item-total">
+                <label>Grand Total</label>
+                <div class="totals-value" id="cart-total">90.57</div>
+            </div>
+        </div>
+        <a href="inventory.html">Back To Inventory</a>
+        <button class="checkout">Checkout</button>
+
+    </div>
+    <script src="js/cart.js"></script>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+
+<div class="row">
+    <div class="col-12 col-m-12">
+        <form id="reset-form" action="startgame.html">
+            <fieldset>
+                <legend>Reset the Game</legend>
+                <div class="form-group row">
+                    <label for="name" class="col-3 name-label">Player Name:</label>
+                    <div class="col-9">
+                        <input id="player-name" name="name" type="text" class="required" required>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <label for="Truckers" class="col-3 select-label">Number Of Truckers:</label>
+                    <div class="col-9">
+                        <select id="no_truck" name="numberoftruckers" class="form-control" required>
+                            <option data-display="Select">Choose the number of truckers</option>
+                            <option data-display="Select">1</option>
+                            <option data-display="Select">2</option>
+                            <option data-display="Select">3</option>
+                            <option data-display="Select">4</option>
+                            <option data-display="Select">5</option>
+                            <option data-display="Select">6</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <label id="initial-fund" for="Initial-fund" class="col-3 fund-label">Initial Funds:</label>
+                    <div class="col-9">
+                        <input id="fund" name="initial-fund" type="text" class="required" required>
+                    </div>
+
+                </div>
+                <div class="col-12 col-m-12 reset-label">
+                    <button class="start-game" type="submit">Start Game</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+<script>
+        $('#reset-form').submit(function(e){
+            e.preventDefault();
+            var playername =  $('#player-name').val();
+            var Initialfund = $("#fund").val();
+            var noOfTruck = $('#no_truck option:selected').val();
+
+            var defaultSetting = {
+                noOfTrucks : noOfTruck,
+                totalFund : Initialfund,
+                playerName : playername
+            };
+
+            localStorage.setItem("defaultSetting", JSON.stringify(defaultSetting));
+
+
+            $.get('startgame.html', function(data) {
+                $('.content').html(data);
+            });
+        });
+</script>

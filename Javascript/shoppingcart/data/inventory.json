@@ -1,0 +1,16 @@
+[
+  {
+    "id" : "P123",
+    "title" : "Honey Bunches of Oats Granola, 11 Oz",
+    "image" : "img1.jpeg",
+    "price" : "5.99",
+    "product_desc" : "Made with natural wildflower honey. Packed with 34% of whole grain that...the entire family will love! Per 1/2 Cup Serving: 220 Calories; 0.5g Sat Fat--3% DV; 10mg Sodium--0% DV; 12g Sugars."
+  },
+  {
+    "product_id" : "P456",
+    "product_title" : "Honey Bunches of Oats Granola, 11 Oz",
+    "product_image" : "img2.jpeg",
+    "price" : "12.99",
+    "product_desc" : "Made with natural wildflower honey. Packed with 34% of whole grain that...the entire family will love! Per 1/2 Cup Serving: 220 Calories; 0.5g Sat Fat--3% DV; 10mg Sodium--0% DV; 12g Sugars."
+  }
+]

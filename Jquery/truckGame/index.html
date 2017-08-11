@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Racing Game</title>
+    <link rel="stylesheet" type="text/css"  href="main.css"/>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
+            integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Mad Trucker</h1>
+    </div>
+
+    <div class="row reset-btn">
+        <button class="reset-button">Reset</button>
+    </div>
+    <div class=" row content">
+
+    </div>
+
+    <script>
+        $( function() {
+            localStorage.removeItem('defaultSetting');
+            $.get('startgame.html', function (data) {
+                $('.content').html(data);
+            });
+        });
+    </script>
+
+</body>
+</html>

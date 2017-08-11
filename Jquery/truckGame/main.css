@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: flex;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    text-align: center;
+    padding: 15px;
+}
+input.bet-amount {
+    margin: 5px 0px 10px 0px;
+    width: 100%;
+    padding: 5px 10px;
+}
+.reset-btn{
+    text-align: center;
+}
+.reset-button{
+    border: 1px solid #c5c5c5;
+    background: #f6f6f6;
+    font-weight: normal;
+    color: #454545;
+}
+.reset-button ,#bet-button, #start-button,.start-game{
+    height:40px;
+    width:100px;
+    font-size: 12px;
+}
+.container{
+    margin: 20px auto;
+    padding: 0 50px 0 0;
+    width: 80%;
+    background: url('assets/racing-stripes.jpg') repeat-y 100% 0;
+}
+
+.jackpot{
+    color: red;
+    font-size: 24px;
+    text-align: center;
+     display: none;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.track{
+    background-image: url('assets/track.png');
+    padding: 8px;
+    height: 80px;
+}
+.track .fa-truck {
+
+    font-size: 50px;
+    padding: 7px;
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    -o-transform:rotateY(180deg);
+    -ms-transform:rotateY(180deg);
+}
+.move{
+
+    position:absolute;
+    -webkit-animation:linear ;
+    -webkit-animation-name: run;
+    -webkit-animation-iteration-count:1;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes run {
+    0%   {left: 10%}
+    25%  {left: 25%}
+    75%  {left: 63%}
+    100% {left: 77%}
+}
+
+.actions{
+    margin: 20px auto;
+    width:80%;
+}
+
+.buttons{
+    float: left;
+}
+
+.player{
+    float: right;
+}
+
+.player .fa-user-secret {
+    font-size: 50px;
+    color: brown;
+}
+/*reset form */
+#reset {
+    width: 800px;
+    margin: 0px auto;
+}
+#player-name , #fund{
+    padding: 3px 10px;
+    width: 185px;
+}
+select{
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+
+
+}
+.form-control{
+    width: 185px;
+    height:25px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .player{
+        float: left;
+        margin-top: 10px;
+    }
+    .player .fa-user-secret {
+        font-size: 25px;
+    }
+    input{
+        border: 1px solid #dddddd;
+    }
+}
