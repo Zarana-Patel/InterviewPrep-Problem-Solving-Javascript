@@ -15,8 +15,8 @@ function getSubString(str){
     var reverse = [];
     for(i = 0; i < length; i++)
     {
-        for(j=1;j<= length-i;j++){
-            var sub = str.substring(i,i+j);
+        for(j=i+1;j<= length;j++){
+            var sub = str.slice(i,j);
             var reverse = sub.split('').reverse().join('');
 
             if(sub === reverse){

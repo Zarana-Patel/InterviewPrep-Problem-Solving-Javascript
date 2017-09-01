@@ -29,3 +29,53 @@ s1.shift();
 s1.print();
 
 s1.peek();
+
+//ECMA 6
+
+/*
+ class Queue{
+ constructor(){
+ this.items = [];
+ }
+
+ enqueue(element){
+ this.items.unshift(element);
+ };
+
+ dequeue(){
+ return this.items.shift();
+ };
+
+ front(){
+ return this.items[0];
+ };
+
+ isEmpty(){
+ return this.items.length == 0;
+ };
+
+ clear(){
+ this.items = [];
+ };
+
+ size(){
+ return this.items.length;
+ };
+
+ print(){
+ console.log(this.items.toString());
+ };
+ }
+ let queue = new Queue();
+ queue.enqueue("John");
+ queue.enqueue("Jack");
+ queue.print();
+ queue.enqueue("Camila");
+ queue.print();
+ console.log(queue.size()); //outputs 3
+ console.log(queue.isEmpty()); //outputs false
+ queue.dequeue();
+ queue.dequeue();
+ queue.print();
+
+    */

@@ -21,3 +21,26 @@ function missing(arr){
     console.log(misselements);
 }
 missing(arr);
+
+
+//Solution 2 (If the array is sorted)
+/*
+ 1) check array is sorted or not .if not then sort the array
+ 2) find the difference between i and i+1 elements
+ 3) if difference is more than 1 then push the [i]+1 into new array
+ 4) that new array will be your missing element arraylist
+ */
+var numbers = [0,1,3,4,5,7,8]; // Missing 2,6
+function missingarraylist(numbers){
+    var missing = [];
+    for ( var i = 0; i < numbers.length; i++ ) {
+        var diff = numbers[i+1] - numbers[i];
+        if ( diff > 1 ) {
+            missing.push(numbers[i]+1);
+        }
+    }
+
+    console.log( missing );
+}
+
+missingarraylist(numbers);

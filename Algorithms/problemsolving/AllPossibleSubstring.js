@@ -11,8 +11,8 @@ function getSubString(str)
     var arraylist = [];
     for(i = 0; i < length; i++)
     {
-        for(j=1;j<= length-i;j++){
-            var sub = str.substring(i,i+j);
+        for(j=i+1;j<=length;j++){
+            var sub = str.slice(i,j);
             arraylist.push(sub);
         }
     }
@@ -23,3 +23,5 @@ function getSubString(str)
 
 
 console.log(getSubString('abc'));
+
+console.log(getSubString('hello'));
