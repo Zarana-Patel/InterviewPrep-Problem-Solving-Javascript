@@ -13,3 +13,21 @@ function incrementLast(array) {
     );
 }
 console.log(incrementLast([1,2,3]));
+
+/* solution 2
+
+ var list = [1,2,3,5,6,8,9];
+
+
+ var newlist = list.map(function(element,index,array){
+ if (index === list.length-1){
+ return element+1;
+ }
+ else{
+ return element;
+ }
+ });
+ console.log(newlist);
+
+
+ */

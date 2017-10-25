@@ -35,8 +35,9 @@ function missingarraylist(numbers){
     var missing = [];
     for ( var i = 0; i < numbers.length; i++ ) {
         var diff = numbers[i+1] - numbers[i];
-        if ( diff > 1 ) {
-            missing.push(numbers[i]+1);
+        while( diff > 1 ){
+            missing.push(numbers[i+1]-(diff-1));
+            diff = diff-1;
         }
     }
 
