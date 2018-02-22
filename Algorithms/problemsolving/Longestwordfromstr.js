@@ -8,4 +8,4 @@ function findLongestWord(str) {
   return longestWord[0].length; 
 };
 
-findLongestWord("I love javascript coding!!");
+console.log(findLongestWord("I love javascript coding!!"));
