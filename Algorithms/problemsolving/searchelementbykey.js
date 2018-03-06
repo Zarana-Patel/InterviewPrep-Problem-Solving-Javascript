@@ -35,3 +35,20 @@ console.log(arraytoObj(arraylist,'c'));
 
  console.log(filter('c'));
  */
+//Solution-3
+/*
+var arraylist = ["Arrow","Basic","Javascript"];
+function searchbyElementKey(arraylist,searchKey){
+   var obj={};
+   for(var i=0;i<arraylist.length;i++){
+       obj[arraylist[i].charAt(0)] = arraylist[i];
+        var keys = Object.keys(obj);
+   }
+   	if(keys.filter(key => key ===searchKey)){
+  			console.log(obj[searchKey]);
+ 		 }
+	
+  
+}
+searchbyElementKey(arraylist,'B');
+*/
