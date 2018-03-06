@@ -1,1 +1,1 @@
-# Basci Concepts
+# Basic Concepts
