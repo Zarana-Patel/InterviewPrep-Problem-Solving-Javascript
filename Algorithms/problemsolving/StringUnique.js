@@ -43,3 +43,16 @@ function determineUnqiue(str){
 }
 console.log(determineUnqiue('zarna'));
     */
+/*Solution-3
+var name = "javascript ";
+function uniquestr(name){
+	for(var i =0;i<name.length;i++){
+if(name.lastIndexOf(name[i]) === name.indexOf(name[i])){
+ 	   return false;
+}else{
+   return true;
+}
+}
+}
+console.log(uniquestr(name));
+*/
