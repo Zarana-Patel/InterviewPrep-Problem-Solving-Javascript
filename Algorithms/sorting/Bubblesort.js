@@ -21,3 +21,26 @@ function BubbleSort(a)
 
 BubbleSort(a);
 console.log(a);
+
+/*
+var bubbleSort = function(arr){
+    for(var i =0;i<arr.length;i++){
+         var swapped = false;
+       for(var j=0;j<arr.length;j++){
+            if(arr[j]>arr[j+1]){
+                temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
+                swapped = true;
+            }
+       }
+       if(swapped == false){
+          break;
+       }
+    }
+  return arr;
+}
+
+console.log(bubbleSort([9,65,34,55,12]));
+
+*/
