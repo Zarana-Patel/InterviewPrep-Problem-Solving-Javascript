@@ -1,14 +1,29 @@
 /**
  * Created by zaranapatel on 6/12/17.
  */
-function reverse(s) {
-    var o = '';
-    for (var i = s.length - 1; i >= 0; i--)
-        o += s[i];
-    return o;
+function reverse(str){
+   if(!str || str.length<2){
+       return str;
+   }
+   else{
+   
+   }
+    let reversestr = '';
+   for(i=str.length-1;i>=0;i--){
+      reversestr = reversestr+str[i];
+   }
+   return reversestr;
 }
+console.log(reverse('I am zara'));
 
-console.log(reverse('zarana'));
+//ES6 
+
+const reversestr =str=> [...str].reverse().join('');
+console.log(reversestr("I am zara"));
+
+const reversestr =str=> str.split('').reverse().join('');
+console.log(reversestr("I am zara"));
+
 
 
 //solution2
