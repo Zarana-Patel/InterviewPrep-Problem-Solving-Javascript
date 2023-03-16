@@ -19,33 +19,28 @@ function Uniquearray(array){
 }
 //Merge two sorting array Solution 2
 /*
- function Quicksort(arrlist){
-
- if (arrlist <=1){
- return arrlist;
- }
- else{
- var sortedarray = [];
- var left =[];
- var right=[];
- var pivot = arrlist.pop();
- for(var i=0;i<arrlist.length;i++){
- if (arrlist[i]>=pivot){
- right.push(arrlist[i])
- }
- else{
- left.push(arrlist[i])
- }
- }
- return sortedarray.concat(Quicksort(left),pivot,Quicksort(right));
- }
-
- }
- function mergetwoarr(a,b){
- var merge = a.concat(b);
- var result =Quicksort(merge);
- return result;
- }
- console.log(mergetwoarr([1,2,3],[3,5,6,7]));
- */
-
+function mergeArray(arr1,arr2){
+    let mergeArray = [];
+    array1Item = arr1[0];
+    array2Item = arr2[0];
+    let i =1;
+    let j=1;
+    
+    while(array1Item || array2Item){
+        console.log(array1Item , array2Item);
+       if(!arr2 ||  array1Item < array2Item){
+         mergeArray.push(array1Item);
+            array1Item = arr1[i];
+            i++;
+    }
+    else{
+    	    mergeArray.push(array2Item);
+            array2Item = arr2[j];
+            j++;
+    }
+   
+}
+ return mergeArray;
+}
+console.log(mergeArray([1,3,4,6],[2,3,7,8]));
+*/
