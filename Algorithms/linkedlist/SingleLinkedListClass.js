@@ -56,16 +56,23 @@ class linkedList{
          let currentNode = this.head;
          while(counter !== index){
            currentNode = currentNode.next;
-           counter++           
+           counter++;           
          }
          return currentNode;
     }  
+  remove (index){
+     let leader = this.traverseToNext(index-1);
+    let unwanterNode = leader.next;
+    leader.next = unwanterNode.next;
+    this.length--;
+    return this;
+  }
 }
-
  let newLinkedList = new linkedList(10);
  newLinkedList.append(5);
 newLinkedList.append(16);
+newLinkedList.insert(2,66);
 newLinkedList.prepend(1);
-newLinkedList.insert(2,99);
- console.log(newLinkedList);
+newLinkedList.remove(1);
+console.log(newLinkedList);
 
