@@ -67,12 +67,31 @@ class linkedList{
     this.length--;
     return this;
   }
+      reverse(){
+     if(!this.head.next){
+          return this.head;
+     }
+    let first = this.head;
+    this.tail = this.head;
+    let second = first.next;
+    while(second){
+         let temp = second.next;
+          second.next  = first;
+          first = second;
+          second = temp;
+    }
+     this.head.next = null;
+    this.head = first;
+    return this.printList();
+  }
 }
+
  let newLinkedList = new linkedList(10);
  newLinkedList.append(5);
 newLinkedList.append(16);
 newLinkedList.insert(2,66);
 newLinkedList.prepend(1);
 newLinkedList.remove(1);
+newLinkedList.reverse();
 console.log(newLinkedList);
 
