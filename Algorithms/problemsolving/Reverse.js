@@ -29,23 +29,18 @@ console.log(reversestr("I am zara"));
 //solution2
 /*
  function reverse1(str){
- var arr,head,tail,temp;
-
- if(!str) return;
-
- head = 0;
- tail = str.length-1;
-
- while(head < tail){
- temp = arr[head];
- arr[head] = arr[tail];
- arr[tail] = temp;
-
- head++;
- tail--;
- }
-
- return arr.join('');
- }
+ var reverseString = function(s) {
+      let left = 0;
+   let right =s.length-1;
+   while(left <right){
+       temp = s[left];
+       s[left]= s[right];
+       s[right] = temp;
+       left++;
+       right--;
+   }
+    
+};
+ console.log(reverse1(["h","e","l","l","o"]);
 
  */
