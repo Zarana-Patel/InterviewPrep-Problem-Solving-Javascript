@@ -17,14 +17,14 @@ function reverse(str){
 console.log(reverse('I am zara'));
 
 //ES6 
-
+/*
 const reversestr =str=> [...str].reverse().join('');
 console.log(reversestr("I am zara"));
 
 const reversestr =str=> str.split('').reverse().join('');
 console.log(reversestr("I am zara"));
 
-
+*/
 
 //solution2
 /*
