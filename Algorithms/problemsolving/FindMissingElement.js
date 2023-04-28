@@ -45,3 +45,25 @@ function missingarraylist(numbers){
 }
 
 missingarraylist(numbers);
+
+//Solution 3
+
+
+function  missingNumber(arr, n){
+    	let missingNumbers = [];
+        if(n === 1){
+            return arr[0];
+        }
+        if(n >1){
+          let sortArray =arr.sort(function(a, b){return a - b});
+          let minNumber = Math.min(...sortArray);
+          let maxNumber = Math.max(...sortArray);
+          for(let i=minNumber;i<maxNumber;i++){
+              		if(sortArray.indexOf(i) < 0)
+                    {
+                      missingNumbers.push(i);
+       				 }
+                }
+              }
+       return missingNumbers;   
+    }
