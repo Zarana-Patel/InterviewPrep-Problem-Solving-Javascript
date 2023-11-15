@@ -1,0 +1,18 @@
+var findMaxConsecutiveOnes = function(nums) {
+     var currentcount = 0;
+     var lastcount = 0;
+    for(var i =0;i<nums.length;i++){
+        if (nums[i] == 0){
+             currentcount = 0;
+        }
+        else {
+        			currentcount++;
+        }
+        if(currentcount > lastcount){
+             lastcount++;
+        }
+    }
+    return lastcount;
+};
+
+console.log(findMaxConsecutiveOnes([1,0,1,1,0,1]));
