@@ -22,3 +22,26 @@ function balancedstring(str){
     return !list.length;
 }
 console.log(balancedstring('{([)}'));
+
+// using map 
+/*
+const BalanceStr = (s) => {
+  const map = {
+    ")": "(",
+    "}": "{",
+    "]": "[",
+  }
+  let stacklist = []
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === "{" || s[i] === "[" || s[i] === "(") {
+      stacklist.push(s[i])
+    } else if (stacklist[stacklist.length - 1] === map[s[i]]) {
+      stacklist.pop()
+    } else {
+      return false
+    }
+  }
+  return stacklist.length ? false : true
+}
+console.log(BalanceStr("{[(])}"))
+*/
